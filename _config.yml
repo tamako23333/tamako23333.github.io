@@ -4,6 +4,6 @@ plugins:
 
 title: TAMAKO的个人网站
 description: 你好世界，很高兴认识你，希望在我的短暂人生的任何阶段都可以期待和你不断的相遇.
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
