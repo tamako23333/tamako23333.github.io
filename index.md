@@ -3,7 +3,7 @@ layout: default
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
-这是一段[=加删除线的文本=]。
+这是一段[=shanchuxian=]
 [Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
