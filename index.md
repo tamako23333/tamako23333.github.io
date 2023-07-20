@@ -2,14 +2,10 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-这是一段[=shanchuxian=]
+1999年,银河系-猎户臂-太阳系-地球-32.038713,112.136220,
+你好，我是TAMAKO，是个随处可见的浪漫主义者。
 [Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
+我将在这里分享我浪漫寻常又有趣的人生，希望我可以将人生当做我的审美体验，在我的弥留之际，回味过往，好似清澈爽朗的春日微风，像没有经历人间，又穷尽了人间。
 # Header 1
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
