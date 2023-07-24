@@ -7,6 +7,3 @@ layout: default
 [Link to another page](./another-page.html).
 我将在这里分享我浪漫寻常又有趣的人生。
 
-```
-The final element.
-```
