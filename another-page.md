@@ -1,13 +1,13 @@
-markdown
+关于语言学习
 ---
-layout: default
-title: 关于语言学习
+
+
 description: 我似乎抓住了外语学习的核心了。
 ---
 
 ## Welcome to another page
 
-_yay_
+_(:з)∠)_
 
 <!-- 在这里添加你的文章内容 -->
 ## 输入就是一切  INPUT IS EVERYTHING
@@ -16,6 +16,6 @@ _yay_
 大半的时间在使用中文学习英文，大半的时间在无效的输入单词，这和每天记100个新同学的名字一样，无效，无聊，但是我们就这样做了几十年。
 
 <!-- 在这里插入图片 -->
-![Image Description](/path/to/your/image.jpg)
+![](/path/to/your/image.jpg)
 
 [back](./)
