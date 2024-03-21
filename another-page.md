@@ -12,11 +12,10 @@ _yay_
 <!-- 在这里添加你的文章内容 -->
 ## 输入就是一切  INPUT IS EVERYTHING
 
-Your article content goes here. You can write in plain text or use Markdown formatting for headings, lists, links, etc.
+看b站up主罗肖尼shawney有感：学校语言教学的失败就是不注重输入的，Stephen Krashen提出的静默期，完美对应了肖尼的小时候，也完美对应了我的小时候，70%的时间都应该花在听——花在听的输入上，初中三年每年的寒暑假几乎没日没夜的动画时间，加在一起差不多也就是5个月，5个月的静默期之后，我明显感觉到我听懂了日语，没有任何征兆的在某天看动画的时候，我发现每一句话的结构是如此的清晰，于是我可以开口讲话了。英语教学不知道多少年，却远远达不到我几个寒暑假没有刻意去学习的语言水平。
+大半的时间在使用中文学习英文，大半的时间在无效的输入单词，这和每天记100个新同学的名字一样，无效，无聊，但是我们就这样做了几十年。
 
 <!-- 在这里插入图片 -->
 ![Image Description](/path/to/your/image.jpg)
-
-You can also add more text, images, or any other content you wish to include in your article.
 
 [back](./)
