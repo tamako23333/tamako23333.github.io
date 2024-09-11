@@ -1,0 +1,62 @@
+/* 全局样式 */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+/* 标题样式 */
+h1, h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* 链接样式 */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 段落样式 */
+p {
+  margin: 20px 0;
+}
+
+/* 引用样式 */
+blockquote {
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #3498db;
+  padding-left: 15px;
+  margin-left: 0;
+}
+
+/* 图片样式 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* 列表样式 */
+ul, ol {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+/* 代码样式 */
+code {
+  background-color: #f4f4f4;
+  padding: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 5px;
+}
