@@ -17,21 +17,37 @@ body {
     padding: 20px;
 }
 
-.profile-image {
+/* 背景图片样式 */
+.profile-background {
+    position: relative; /* 让内部内容可以定位 */
     width: 100%;
+    height: 400px; /* 根据需要调整背景高度 */
+    background-image: url('images/profile.jpg'); /* 你的背景图片路径 */
+    background-size: cover; /* 让背景图片覆盖整个区域 */
+    background-position: center;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-.sidebar h2 {
+/* 叠加在背景图片上的文字 */
+.profile-text {
+    position: absolute;
+    bottom: 20px; /* 让文字距离背景底部一些 */
+    left: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.profile-text h2 {
     font-size: 24px;
     margin: 0;
 }
 
-.sidebar p {
+.profile-text p {
     font-size: 14px;
 }
 
+/* 侧边栏文字样式 */
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -83,3 +99,4 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
+
