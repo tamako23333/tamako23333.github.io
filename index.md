@@ -8,3 +8,4 @@ layout: default
 
 文章：
 [英语大神是如何练成的](./another-page.html).
+[2024-08-22（关于景观社会](./关于景观社会.html).
