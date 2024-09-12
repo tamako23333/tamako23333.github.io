@@ -1,3 +1,4 @@
+/* 全局样式 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,25 +6,28 @@ body {
     background-color: #f9f9f9;
 }
 
+/* 容器设为flex布局，确保侧边栏和主内容区域占据全屏 */
 .container {
     display: flex;
     min-height: 100vh;
 }
 
+/* 侧边栏宽度设为固定值，并设置颜色和内边距 */
 .sidebar {
-    width: 25%;
+    width: 300px; /* 将宽度固定，避免页面缩放时比例问题 */
     background-color: #2b3a42;
     color: white;
-    padding: 20px;
+    padding: 40px;
+    box-sizing: border-box; /* 确保padding不会影响整体宽度 */
 }
 
 /* 背景图片样式 */
 .profile-background {
-    position: relative; /* 让内部内容可以定位 */
-    width: 100%;  /* 宽度设为100%以填满侧边栏 */
-    height: 200px; /* 根据需要调整背景高度，适当提高一些 */
-    background-image: url('images/profile.jpg'); /* 你的背景图片路径 */
-    background-size: cover; /* 确保图片覆盖整个背景，但不超出容器 */
+    position: relative;
+    width: 100%;  
+    height: 220px; /* 根据需求略微提高背景高度 */
+    background-image: url('images/profile.jpg');
+    background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -32,23 +36,23 @@ body {
 /* 叠加在背景图片上的文字 */
 .profile-text {
     position: absolute;
-    bottom: 10px; /* 让文字距离背景底部一些 */
+    bottom: 10px; 
     left: 10px;
     color: white;
     z-index: 1;
-    width: 90%; /* 限制文字区域宽度 */
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景以便于阅读 */
+    width: calc(100% - 20px); /* 改用calc，让文字适应容器宽度 */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10px;
     border-radius: 5px;
 }
 
 .profile-text h2 {
-    font-size: 20px; /* 缩小字体 */
+    font-size: 20px;
     margin: 0;
 }
 
 .profile-text p {
-    font-size: 12px; /* 缩小字体 */
+    font-size: 12px;
 }
 
 /* 侧边栏文字样式 */
@@ -67,42 +71,94 @@ body {
     font-size: 16px;
 }
 
-/* 主内容样式 */
+.sidebar ul li a:hover {
+    color: #1abc9c; /* 鼠标悬停时改变文字颜色 */
+}
+
+/* 主内容样式，确保自适应布局 */
 .main-content {
-    width: 75%;
-    padding: 20px; /* 减少主内容的内边距 */
+    flex-grow: 1;
+    padding: 20px;
     background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 主内容居中 */
 }
 
+/* 文章块 */
 .post {
-    margin-bottom: 30px; /* 缩小每个文章块之间的间距 */
+    margin-bottom: 30px;
+    width: 80%; /* 设置文章区域宽度为80%，可根据需要调整 */
+    text-align: left; /* 确保文本左对齐 */
 }
 
+/* 标题居中但左对齐文本 */
 .post h3 {
-    font-size: 22px; /* 缩小标题 */
+    font-size: 22px;
     color: #333;
+    margin-bottom: 10px;
+    text-align: left; /* 标题和时间文本左对齐 */
 }
 
+/* 日期样式 */
 .post .date {
     font-size: 12px;
     color: #999;
     margin-bottom: 10px;
+    text-align: left; /* 日期文本左对齐 */
 }
 
+/* 文章简介居中显示 */
+.post .excerpt {
+    font-size: 14px;
+    color: #666;
+    text-align: center; /* 文章简介居中 */
+    margin-bottom: 20px;
+}
+
+/* 调整图片宽度 */
 .post-image {
-    width: 80%; /* 缩小图片宽度，限制在80% */
+    width: 85%; /* 略大于文章内容的宽度 */
+    max-width: 700px; /* 设置最大宽度，防止图片过大 */
     height: auto;
     border-radius: 5px;
-    margin: 10px 0; /* 减少图片上下的边距 */
+    margin: 20px auto; /* 图片居中且上下有间距 */
 }
 
+/* 阅读更多按钮 */
 .read-more {
     display: inline-block;
-    padding: 8px 16px; /* 缩小按钮尺寸 */
+    padding: 8px 16px;
     background-color: #1abc9c;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px; /* 缩小按钮文字 */
+    font-size: 14px;
+    transition: background-color 0.3s; /* 添加动画效果 */
 }
 
+.read-more:hover {
+    background-color: #16a085; /* 鼠标悬停时改变按钮颜色 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* 小屏幕下让侧边栏占满宽度 */
+        padding: 20px;
+    }
+
+    .main-content {
+        width: 100%; /* 主内容在小屏幕下占满剩余宽度 */
+        padding: 15px;
+    }
+
+    .post-image {
+        width: 100%; /* 小屏幕下图片宽度自适应 */
+    }
+
+    .read-more {
+        font-size: 12px; /* 小屏幕下调整按钮文字大小 */
+    }
+}
