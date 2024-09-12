@@ -10,15 +10,22 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
+    flex-direction: row; /* 保持侧边栏和主内容横向排列 */
 }
 
-/* 侧边栏宽度设为固定值，并设置颜色和内边距 */
+/* 侧边栏设置为百分比宽度 */
 .sidebar {
-    width: 300px; /* 将宽度固定，避免页面缩放时比例问题 */
+    width: 25%; /* 设置为25%的宽度，不管屏幕多宽 */
     background-color: #2b3a42;
     color: white;
     padding: 40px;
     box-sizing: border-box; /* 确保padding不会影响整体宽度 */
+}
+
+/* 副标题大小调整 */
+.quote {
+    font-size: 21px;
+    font-weight: bold;
 }
 
 /* 背景图片样式 */
@@ -78,6 +85,7 @@ body {
 /* 主内容样式，确保自适应布局 */
 .main-content {
     flex-grow: 1;
+    width: 75%; /* 主内容区域占据75% */
     padding: 20px;
     background-color: #fff;
     box-sizing: border-box;
@@ -89,7 +97,7 @@ body {
 /* 文章块 */
 .post {
     margin-bottom: 30px;
-    width: 80%; /* 设置文章区域宽度为80%，可根据需要调整 */
+    width: 80%; /* 设置文章区域宽度为80% */
     text-align: left; /* 确保文本左对齐 */
 }
 
@@ -98,7 +106,7 @@ body {
     font-size: 22px;
     color: #333;
     margin-bottom: 10px;
-    text-align: left; /* 标题和时间文本左对齐 */
+    text-align: left;
 }
 
 /* 日期样式 */
@@ -106,21 +114,21 @@ body {
     font-size: 12px;
     color: #999;
     margin-bottom: 10px;
-    text-align: left; /* 日期文本左对齐 */
+    text-align: left;
 }
 
 /* 文章简介居中显示 */
 .post .excerpt {
     font-size: 14px;
     color: #666;
-    text-align: center; /* 文章简介居中 */
+    text-align: center;
     margin-bottom: 20px;
 }
 
 /* 调整图片宽度 */
 .post-image {
     width: 85%; /* 略大于文章内容的宽度 */
-    max-width: 700px; /* 设置最大宽度，防止图片过大 */
+    max-width: 700px;
     height: auto;
     border-radius: 5px;
     margin: 20px auto; /* 图片居中且上下有间距 */
@@ -135,15 +143,19 @@ body {
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
-    transition: background-color 0.3s; /* 添加动画效果 */
+    transition: background-color 0.3s;
 }
 
 .read-more:hover {
-    background-color: #16a085; /* 鼠标悬停时改变按钮颜色 */
+    background-color: #16a085;
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* 在小屏幕上侧边栏和主内容变为纵向排列 */
+    }
+
     .sidebar {
         width: 100%; /* 小屏幕下让侧边栏占满宽度 */
         padding: 20px;
